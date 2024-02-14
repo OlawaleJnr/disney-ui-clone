@@ -38,8 +38,42 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: disneyAppBar(),
-      body: const Center(),
-      backgroundColor: const Color.fromARGB(30, 34, 49, 255)
+      backgroundColor: const Color.fromARGB(30, 34, 49, 255),
+      body: Column(
+        mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          const Divider(color: Colors.white12, height: 0.5, thickness: 0.5),
+          BottomNavigationBar(
+            items: const <BottomNavigationBarItem>[
+              BottomNavigationBarItem(
+                icon: Icon(Icons.home),
+                label: 'Home',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.search),
+                label: 'Search',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.download),
+                label: 'Downloads',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.person),
+                label: 'Profile',
+              ),
+            ],
+            elevation: 0,
+            showSelectedLabels: true,
+            showUnselectedLabels: true,
+            selectedItemColor: Colors.white,
+            type: BottomNavigationBarType.fixed,
+            backgroundColor: Colors.transparent,
+            unselectedItemColor: Colors.white.withOpacity(0.5),
+          ),
+        ],
+      )
     );
   }
 }
