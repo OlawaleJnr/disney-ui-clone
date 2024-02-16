@@ -1,4 +1,4 @@
-List<String> images = [
+List<String> carouselImages = [
   "https://d23.com/app/uploads/2019/10/00-toy-story-4-az.jpg",
   "https://d23.com/app/uploads/2019/09/1-endgame-az.jpg",
   "https://d23.com/app/uploads/2017/05/1180w-600h_051917_event-cars-3-screening.jpg",

@@ -1,4 +1,8 @@
 {
   "@@locale": "en",
-  "appTitle": "Disney+"
+  "appTitle": "Disney Plus",
+  "home": "Home",
+  "search": "Search",
+  "profile": "Profile",
+  "downloads": "Downloads"
 }
