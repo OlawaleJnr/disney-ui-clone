@@ -4,6 +4,7 @@ import 'package:disney_plus/features/movies/data/movies.dart';
 import 'package:disney_plus/features/movies/presentation/bottom_navigation_bar/bottom_navigation_bar.dart';
 import 'package:disney_plus/features/movies/presentation/home_app_bar/home_app_bar.dart';
 import 'package:disney_plus/features/movies/presentation/home_screen/carousel_slider.dart';
+import 'package:disney_plus/features/movies/presentation/home_screen/top_movie_studios.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -37,6 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
             },
           ),
           const Gap(Sizes.p20),
+          TopMovieStudios(images: logos)
         ],
       ),
       bottomNavigationBar: const DisneyPlusBottomNavigationBar(),
