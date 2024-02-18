@@ -4,6 +4,7 @@ import 'package:disney_plus/features/movies/data/movies.dart';
 import 'package:disney_plus/features/movies/presentation/bottom_navigation_bar/bottom_navigation_bar.dart';
 import 'package:disney_plus/features/movies/presentation/home_app_bar/home_app_bar.dart';
 import 'package:disney_plus/features/movies/presentation/home_screen/carousel_slider.dart';
+import 'package:disney_plus/features/movies/presentation/home_screen/movie_box.dart';
 import 'package:disney_plus/features/movies/presentation/home_screen/top_movie_studios.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -26,6 +27,8 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: const DisneyAppBar(),
       backgroundColor: AppColors.kBackgroundColor,
       body: ListView(
+        shrinkWrap: true,
+        addAutomaticKeepAlives: true,
         children: [
           const Gap(Sizes.p10),
           CarouselSlider(
@@ -38,7 +41,11 @@ class _HomeScreenState extends State<HomeScreen> {
             },
           ),
           const Gap(Sizes.p20),
-          TopMovieStudios(images: logos)
+          TopMovieStudios(images: logos),
+          const Gap(Sizes.p20),
+          MovieBox(title: 'Recommended for You', movies: covers),
+          const Gap(Sizes.p20),
+          MovieBox(title: 'Hit Movies', movies: covers)
         ],
       ),
       bottomNavigationBar: const DisneyPlusBottomNavigationBar(),
