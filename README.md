@@ -23,7 +23,7 @@ A lightweight Flutter implementation that reproduces the look-and-feel of the Di
 
 ## Overview
 
-This repository is a Flutter-based recreation of the Disney+ home page UI. The focus is on pixel-accurate layout, responsive behavior across screen sizes, and smooth UI animations. It is implemented primarily in Dart and targets standard Flutter platforms (Android, iOS, web where applicable).
+This repository is a Flutter-based recreation of the Disney+ home page UI. The focus is on pixel-accurate layout, responsive behavior across screen sizes, and smooth UI animations. It is implemented primarily in Dart and targets standard Flutter platforms (Android, iOS).
 
 Repository metadata (from the repository):
 - Repository: OlawaleJnr/disney-ui-clone
@@ -46,7 +46,7 @@ Language composition (by bytes):
 - Recreated Disney+ home screen layout (hero banner, content rows, navigation)
 - Responsive layout that adapts to phone and tablet widths
 - UI animations for transitions and scrolling effects
-- Local persistence for simple UI state (watchlist/favorites) — repository topic indicates localstorage usage
+- Local persistence for simple UI state
 - Clean, modular Flutter widgets to separate layout and presentation
 
 > Note: The README above is based on repository metadata. For precise dependency and implementation details (exact packages used, storage library, state management approach), see `pubspec.yaml` and the `lib/` source files.
@@ -55,7 +55,6 @@ Language composition (by bytes):
 
 ## Screenshots / Preview
 
-(Replace these placeholder entries with actual screenshots or a GIF.)
 - assets/screenshots/home.png
 - assets/screenshots/hero_animation.gif
 
@@ -64,7 +63,7 @@ Language composition (by bytes):
 ## Tech stack
 
 - Flutter (Dart)
-- Platform support: Android, iOS, (possible web)
+- Platform support: Android, iOS
 - Optional / inferred packages: animation utilities, local storage (e.g., shared_preferences / hive) — confirm exact packages in pubspec.yaml
 
 ---
@@ -84,8 +83,6 @@ This project follows a standard Flutter project layout. Example structure:
   - theme/               — colors, typography, theme data
 - assets/                — images, icons, fonts
 - pubspec.yaml           — dependencies and asset declarations
-
-(If your repo differs, update this section to match the actual tree.)
 
 ---
 
